@@ -3,6 +3,17 @@
 This project demonstrates several stages of a django project
 Each one has a seperate folder
 
+# Step 0. plan your database and models
+
+1. plan which models and what is the connection between them (1-1, 1-M, M-M)
+2. create them in django
+3. test using admin plus:
+   python manage.py shell
+   or
+   write a simple view that you can test with
+
+## note: its may be better to do the user model substitution even before step 0. so you dont have to delete the database and the migrations
+
 # Step 1. user model substitution
 
 git clone https://github.com/ranerlich7/django-driver-full-project-w-stages.git
