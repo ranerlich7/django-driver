@@ -35,7 +35,7 @@ project is ready.
 3. make migrations + migrate
 4. create a super user
 
-5. add fields to admin :
+5. OPTIONAL - only if you use the original UserAdmin of django . add fields to admin :
 
    fields = list(UserAdmin.fieldsets)
 
@@ -46,7 +46,7 @@ project is ready.
    admin.site.register(Driver, UserAdmin)
 
 6. create
-   3 drivers, 2 races, 2 teams in admin
+   3 drivers, 2 races, 2 teams in admin`
 
 # Step 2 - Views and templates
 
@@ -74,12 +74,10 @@ project is ready.
 
 6. add teams by checkbox for example.
 
-# step 4- complete full CRUD
+# step 4- complete full logic/CRUD
 
 update, delete driver
 
-# step 6 - complete all logic
+# step 5- Login
 
-# step 7- Login
-
-# step 8 - deploy to render
+# step 6 - deploy to render
