@@ -5,7 +5,7 @@ Each one has a seperate folder
 
 # Step 1. user model substitution
 
-git clone https://github.com/ranerlich7/django-driver.git
+git clone https://github.com/ranerlich7/django-driver-full-project-w-stages.git
 
 1. open terminal
 2. python -m venv venv
@@ -25,19 +25,20 @@ project is ready.
 4. create a super user
 
 5. add fields to admin :
-   
+
    fields = list(UserAdmin.fieldsets)
-   
+
    fields[0] = (None, {'fields': ('username', 'password', 'age')})
-   
+
    UserAdmin.fieldsets = tuple(fields)
-   
+
    admin.site.register(Driver, UserAdmin)
 
-8. create
+6. create
    3 drivers, 2 races, 2 teams in admin
 
 # Step 2 - Views and templates
+
 ## Add a template and a view that will show all drivers and thier teams and races.
 
 - driver - team - race
@@ -69,4 +70,3 @@ update, delete driver
 # step 5- Login
 
 # step 6 - deploy to render
-
