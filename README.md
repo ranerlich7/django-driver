@@ -3,15 +3,15 @@
 This project demonstrates several stages of a django project
 Each one has a seperate folder
 
-# Step 1. user - install
+# Step 1. user model substitution
 
 git clone https://github.com/ranerlich7/django-driver.git
 
 1. open terminal
-2. cd 1_user_define
-3. python -m venv venv
-4. ./venv/Scripts/activate
-5. pip install -r requirements.txt
+2. python -m venv venv
+3. ./venv/Scripts/activate
+4. pip install -r requirements.txt
+5. cd 1_user_define
 
 project is ready.
 
@@ -33,15 +33,17 @@ project is ready.
 6. create
    3 drivers, 2 races, 2 teams in admin
 
-# Step 2 - Add a template and a view that will show all drivers and thier teams and races.
+# Step 2 - Views and templates
+## Add a template and a view that will show all drivers and thier teams and races.
 
 - driver - team - race
 
-1. start with a simple html + render
-2. add template from W3 bootstrap (or other)
-3. add base.html to allow more screens
+1. cd 2_user_override_completed
+2. start with a simple html + render
+3. add template from W3 bootstrap (or other)
+4. add base.html to allow more screens
 
-# step 3 - crud. add driver
+# step 3 - CRUD. add driver
 
 1. add driver screen - use base.html and duplicate the drivers.html screen
 2. add simple form with username, password, age.
@@ -56,6 +58,11 @@ project is ready.
 
 6. add teams by checkbox for example.
 
-# step 4- complete full crud.
+# step 4- complete full CRUD
 
 update, delete driver
+
+# step 5- Login
+
+# step 6 - deploy to render
+
