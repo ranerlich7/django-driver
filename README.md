@@ -78,6 +78,8 @@ project is ready.
 
 update, delete driver
 
-# step 5- Login
+# step 6 - complete all logic
 
-# step 6 - deploy to render
+# step 7- Login
+
+# step 8 - deploy to render
