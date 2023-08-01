@@ -25,12 +25,16 @@ project is ready.
 4. create a super user
 
 5. add fields to admin :
+   
    fields = list(UserAdmin.fieldsets)
+   
    fields[0] = (None, {'fields': ('username', 'password', 'age')})
+   
    UserAdmin.fieldsets = tuple(fields)
+   
    admin.site.register(Driver, UserAdmin)
 
-6. create
+8. create
    3 drivers, 2 races, 2 teams in admin
 
 # Step 2 - Views and templates
