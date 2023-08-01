@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+<div class="col-sm-7">
+  <h1>Add Driver</h1>
+  <form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" class="form-control" id="name1" name="username" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" name="password" id="passoword1" />
+    </div>
+    <div class="form-group">
+      <label for="age1">Age</label>
+      <input type="number" class="form-control" id="age1" name="age" />
+    </div>
+    <div class="form-group">
+      {% for team in teams %}
+      <input type="radio" id="{{ team }}" name="selected_team" value="{{ team.id }}" />
+      <label for="{{ team }}">{{ team }}</label><br />
+      {% endfor %}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Driver</button>
+  </form>
+</div>
+{% endblock %}

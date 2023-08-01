@@ -3,7 +3,7 @@
 This project demonstrates several stages of a django project
 Each one has a seperate folder
 
-# 1. user - install
+# Step 1. user - install
 
 git clone https://github.com/ranerlich7/django-driver.git
 
@@ -32,3 +32,30 @@ project is ready.
 
 6. create
    3 drivers, 2 races, 2 teams in admin
+
+# Step 2 - Add a template and a view that will show all drivers and thier teams and races.
+
+- driver - team - race
+
+1. start with a simple html + render
+2. add template from W3 bootstrap (or other)
+3. add base.html to allow more screens
+
+# step 3 - crud. add driver
+
+1. add driver screen - use base.html and duplicate the drivers.html screen
+2. add simple form with username, password, age.
+3. add view to show form
+4. now add create_driver code.
+
+## extra:
+
+5. now only admin can add driver - see @permission_required decorator and how to use it.
+
+## extra:
+
+6. add teams by checkbox for example.
+
+# step 4- complete full crud.
+
+update, delete driver
