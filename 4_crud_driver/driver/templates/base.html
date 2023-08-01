@@ -32,16 +32,20 @@
             <li class="active"><a href="{% url 'all_drivers'%}">Home</a></li>
             <li><a href="{% url 'add_driver'%}">Add Driver</a></li>
           </ul>
+
+          <!-- search form-->
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group input-group">
-              <input type="text" class="form-control" placeholder="Search.." />
+              <input type="text" class="form-control" placeholder="Search.." name="search_text" />
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button">
+                <button class="btn btn-default" type="submit">
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
               </span>
             </div>
           </form>
+          <!-- end search form-->
+
           <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a>

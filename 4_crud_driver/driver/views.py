@@ -11,7 +11,11 @@ from driver.models import Driver, Team
 
 def drivers(request):
     # get all drivers from DB
+    search_text = request.GET.get('search_text')
     all_drivers = Driver.objects.all()
+    # filter all drivers by search_text field - that comes from the form
+    if search_text:
+        all_drivers = all_drivers.filter(username__icontains=search_text)
     return render(request, 'drivers.html', {'all_drivers': all_drivers})
 
 
