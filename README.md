@@ -74,12 +74,10 @@ project is ready.
 
 6. add teams by checkbox for example.
 
-# step 4- complete full CRUD
+# step 4- complete full logic/CRUD
 
 update, delete driver
 
-# step 6 - complete all logic
+# step 5- Login
 
-# step 7- Login
-
-# step 8 - deploy to render
+# step 6 - deploy to render
